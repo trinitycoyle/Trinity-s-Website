@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About</title>
+<link type="text/css" rel="stylesheet" href="Style.css">
+
+<meta name="viewport" content="width=720,
+                               initial-scale=1">    
+<script src="jquery.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<link rel="stylesheet" href="nanoscroller.css">
+</head>
+
+<body>
+<div class="wrapper">
+<div class="nano">
+<div class="nano-content">
+<div>
+<div id="menuBar">
+<a href="Home.html"><img class="Logo" src="Images/Logo3.png"></a>
+<div class="nav">
+<ul>
+	<li><a href="Works.html"><span class="navBar">Works</span></a></li>
+    <li><a href="Works2.html"><span class="navBar">About</span></a></li>
+    <li><a href="Works3.html"><span class="navBar">Contact</span></a></li>
+    </ul>
+    </div>
+<div id="Title">
+<a href="Home.html"><img src="Images/Name And Occupation 2.png" alt="title"></a>
+</div>
+  </div>
+</div>
+<div id="Menu2">
+ <ul>
+ 	<li><a href="Works.html"><span class="navBar">Works</span></a></li>
+     <li><span class="navBar2"><a href="Works.html#space1" >Pen And Ink</a></span></li>
+    <li><span class="navBar2"><a href="Works.html#space2">Printmaking</a></span></li>
+    <li><span class="navBar2"><a href="Works.html#space3">Graphic Design</a></span></li>
+    <li><span class="navBar2"><a href="Works.html#space4">Other Media</a></span></li><br>
+    <li><a href="Works2.html"><span class="navBar">About</span></a></li><br>
+    <li><a href="Works3.html"><span class="navBar">Contact</span></a></li>
+ </ul>
+ </div> 
+<div class="All">
+<div id="Tablecontainer1">
+<div id="Tablerow">
+<div class="Featured">
+<h1><img class="medium2" src="Images/About.png"><img class="underline" src="Images/Underline.png"><br></h1>
+<div id="image"><br><br><p class="background2"><img class="row2" src="Images/CuriosityThumbnail.jpg"></p>
+<h5><span class="italic">Curiosity</span>, 2015. Adobe Illustrator Image.</h5></div>
+<div id="about">
+<p><span class="name">Trinity Coyle</span><br><br>
+I am an artist and graphic designer based out of New York, NY.  I have studied at California University of Pennsylvania (BA Art 2001), The Fashion Institute of Technology, The Art Student's League of New York, and Baruch College (Graphic Design Certification 2014).  I specialize in two-dimensional art, working mostly in pen and ink and printmaking, though I have much experience in painting, sculpture, assemblage and mixed media.  I am an avid photographer and have worked in both digital and traditional photography techniques.  I work mostly through the Adobe Creative Cloud, especially in Photoshop CS6 and Illustrator CS6. I use Dreamweaver CS6 to structure my web pages, applying my extensive programming knowledge in HTML and CSS, JavaScript and jQuery.<br><br><a href="Portfolio Resume Version 10 Mini.pdf">Resume PDF</a></p></div>
+</div>
+</div>
+</div>
+<div class="space"></div>
+</div>
+<div class="contact2">Follow On:<br><a href="https://www.facebook.com/Trinity-Coyle-Art-and-Graphic-Design-1481871748782980/timeline/"><img src="Images/Facebook3.fw.png"></a><a href="https://www.behance.net/TrinityCoyle"><img src="Images/Behance3.fw.png"></a><a href="http://trinitycoyleartandgraphicdesign.tumblr.com/"><img src="Images/Tumblr3.fw.png"></a><a href="http://reflectivesound.deviantart.com/"><img src="Images/DeviantArt3.fw.png"></a></div>
+<h6>All images and design: copyright Trinity Coyle 2015</h6>
+<div class="spaceSmall"></div>
+</div>
+</div>
+</div>
+<script src="jquery.js"></script>
+<script src="nanoscroller.js"></script>
+<script>
+
+$(document).ready(function() {
+  $(".row1").animate({opacity: "1.0"},3000); 
+  $(".row2").animate({opacity: "1.0"},4000);
+  $(".row3").animate({opacity: "1.0"},5000);
+  $(".row4").animate({opacity: "1.0"},6000);
+  $(".Featured").animate({opacity: "1.0"}, 2000);
+  $(".nano").nanoScroller();
+});
+
+function preload(arrayOfImages) {
+    $(arrayOfImages).each(function(){
+        $('<img/>')[0].src = this;
+    });
+}
+
+preload([
+    "Images/Logo3.png",
+    "Images/Enter.png",
+    "Images/Name And Occupation 2.png",
+	"Images/BackgroundPen2.png",
+	"Images/About.png",
+	"Images/Underline.png",
+	"Images/CuriosityThumbnail.jpg",
+	"Portfolio Resume Version 10 Mini.pdf",
+	"Images/Facebook3.fw.png",
+	"Images/Behance3.fw.png",
+	"Images/Tumblr3.fw.png",
+	"Images/DeviantArt3.fw.png"
+]);
+</script>
+</body>
+</html>

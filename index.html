@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Enter</title>
+<link type="text/css" rel="stylesheet" href="Style.css">
+<meta name="viewport" content="width=720,
+                               initial-scale=1">                              
+<link rel="shortcut icon" href="http://www.trinitycoyle.com/favicon.ico">
+</head>
+
+<body>
+<div class="wrapper">
+<div id="welcome" class="slideShowContainer">
+<div>
+<div id="menuBar2">
+<a href="Home.html"><img class="Logo" src="Images/Logo3.png"></a>
+<div class="nav">
+<ul>
+<li><a href="Home.html"><span class="navBar"><img src="Images/Enter.png"></span></a></li>
+</ul>
+</div>
+<div id="Title">
+<a href="Home.html"><img src="Images/Name And Occupation 2.png" alt="title"></a>
+</div>
+  </div>
+</div>
+<div class="se-pre-con"></div>
+<ul class="slideShow">
+<li><img src="Images/TC20091Background.JPG"></li>
+<li><img src="Images/TC20103Background.JPG"></li>
+<li><img src="Images/TC20083Background.JPG"></li>
+<li><img src="Images/TC20111Background.JPG"></li>
+<li><img src="Images/TC20101Background.jpg"></li>
+</ul>
+</div>
+</div>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function() {
+ 
+$(function() {
+	var slides = $(".slideShow>li");
+	var slideCount = 0;
+	var totalSlides = slides.length;
+	var slideCache = [];
+	
+	(function preloader() {
+		if(slideCount < totalSlides) {
+			slideCache[slideCount] = new Image();
+			slideCache[slideCount].src = slides.eq(slideCount).find("img").attr("src");
+			slideCache[slideCount].onload = function() {
+				slideCount++;
+				preloader();
+			}
+		} else {
+			slideCount = 0;
+			slideShow();
+		}
+	}());
+	
+	function slideShow () {
+		slides.eq(slideCount).fadeIn(1000).delay(3000).fadeOut(1000, function() {
+			slideCount < totalSlides - 1 ? slideCount ++ : slideCount = 0;
+			slideShow();
+		});
+	}
+	
+});
+
+
+function preload(arrayOfImages) {
+    $(arrayOfImages).each(function(){
+        $('<img/>')[0].src = this;
+    });
+}
+
+preload([
+    "Images/Logo3.png",
+    "Images/Enter.png",
+    "Images/Name And Occupation 2.png",
+	"Images/TC20101Background.jpg",
+	"Images/TC20091Background.JPG",
+	"Images/TC20103Background.JPG",
+	"Images/TC20083Background.JPG",
+	"Images/TC20111Background.JPG"
+]);
+
+});
+
+$(window).load(function() {
+		$(".se-pre-con").fadeOut(1000);;
+		slideShow();
+	});
+
+</script>
+</body>
+</html>

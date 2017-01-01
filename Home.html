@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Trinity Coyle Art And Graphic Design</title>
+<link type="text/css" rel="stylesheet" href="Style.css">
+<meta name="viewport" content="width=720,
+                               initial-scale=1">
+                                      
+<link rel="stylesheet" href="nanoscroller.css">
+</head>
+
+<body> 
+<div class="wrapper"> 
+<div class="nano">
+<div class="nano-content">
+<div>
+<div id="menuBar">
+<a href="Home.html"><img class="Logo" src="Images/Logo3.png"></a>
+<div class="nav">
+<ul>
+	<li><a href="Works.html"><span class="navBar">Works</span></a></li>
+    <li><a href="Works2.html"><span class="navBar">About</span></a></li>
+    <li><a href="Works3.html"><span class="navBar">Contact</span></a></li>
+    </ul>
+    </div>
+<div id="Title">
+<a href="Home.html"><img src="Images/Name And Occupation 2.png" alt="title"></a>
+</div>
+  </div>
+</div>
+<div id="Menu2">
+ <ul>
+ 	<li><a href="Works.html"><span class="navBar">Works</span></a></li>
+    <li><span class="navBar2"><a href="Works.html#space1" >Pen And Ink</a></span></li>
+    <li><span class="navBar2"><a href="Works.html#space2">Printmaking</a></span></li>
+    <li><span class="navBar2"><a href="Works.html#space3">Graphic Design</a></span></li>
+    <li><span class="navBar2"><a href="Works.html#space4">Other Media</a></span></li><br>
+    <li><a href="Works2.html"><span class="navBar">About</span></a></li><br>
+    <li><a href="Works3.html"><span class="navBar">Contact</span></a></li>
+ </ul>
+ </div>
+<div class="All">  
+<div id="Tablecontainer1">
+<div id="Tablerow">
+<div class="Featured">
+<p class="background"><a href="Works.html#space1"><img class="row1" src="Images/TC20101-Thumbnail2.jpg" alt="TC20101 Image">
+<img class="row2" src="Images/TC20081-Thumbnail2.jpg" alt="TC20081 Image">
+<img class="row3" src="Images/TC20103-Thumbnail2.jpg" alt="TC20103 Image">
+<img class="row4" src="Images/TC20092-Thumbnail2.jpg" alt="TC20092 Image"></p><p>
+<img class="medium"src="Images/PenAndInk.png"><img class="underline" src="Images/Underline.png"></a></p>
+</div>
+</div>
+<br>
+<div id="Tablerow">
+<div class="Featured2">
+<p class="background"><a href="Works.html#space2"><img class="row1" src="Images/Untitled 2 Thumbnail2.jpg" alt="Untitled 2 Image">
+<img class="row2" src="Images/Untitled 4 Thumbnail2.jpg" alt="Untitled 4 Image">
+<img class="row3" src="Images/Beliefs Beyond Thumbnail2.jpg" alt="Beliefs Beyond Image">
+<img class="row4" src="Images/Persistence Thumbnail2.jpg" alt="Persistence Image"></p><p><img class="medium"src="Images/Printmaking.png"><img class="underline" src="Images/Underline.png"></a></p>
+</div>
+</div>
+<br>
+<div id="Tablerow">
+<div class="Featured3">
+<p class="background"><a href="Works.html#space3"><img class="row1" src="Images/Bridges Thumbnail2.jpg" alt="Bridges Image">
+<img class="row2" src="Images/Gems Thumbnail2.jpg" alt="Gems Image">
+<img class="row3" src="Images/Curiosity Thumbnail2.jpg" alt="Curiosity Image">
+<img class="row4" src="Images/Whirlwind Thumbnail2.jpg" alt="Whirlwind Image"></p><p><img class="medium" src="Images/GraphicDesign.png"><img class="underline" src="Images/Underline.png"></a></p>
+</div>
+</div>
+<br>
+<div id="Tablerow">
+<div class="Featured4">
+<p class="background"><a href="Works.html#space4"><img class="row1" src="Images/ForJose-Thumbnail2.jpg" alt="For Jose Image">
+<img class="row2" src="Images/Intertwined-Thumbnail2.jpg" alt="Intertwined Image">
+<img class="row3" src="Images/Seasonal-Thumbnail2.jpg" alt="Seasonal Image">
+<img class="row4" src="Images/TreasureWithin-Thumbnail2.jpg" alt="Treasure Within Image"></p><p><img class="medium" src="Images/OtherMedia.png"><img class="underline" src="Images/Underline.png"></a></p>
+</div>
+</div>
+<div class="space"></div>
+</div>
+</div>
+<div class="contact2">Follow On:<br><a href="https://www.facebook.com/Trinity-Coyle-Art-and-Graphic-Design-1481871748782980/timeline/"><img src="Images/Facebook3.fw.png"></a><a href="https://www.behance.net/TrinityCoyle"><img src="Images/Behance3.fw.png"></a><a href="http://trinitycoyleartandgraphicdesign.tumblr.com/"><img src="Images/Tumblr3.fw.png"></a><a href="http://reflectivesound.deviantart.com/"><img src="Images/DeviantArt3.fw.png"></a></div>
+<h6>All images and design: copyright Trinity Coyle 2015</h6>
+<div class="spaceSmall"></div>
+</div>
+</div>
+</div>
+<script src="jquery.js"></script>
+<script src="nanoscroller.js"></script>
+<script>
+
+$(document).ready(function() {
+  $(".row1").animate({opacity: "1.0"},3000); 
+  $(".row2").animate({opacity: "1.0"},4000);
+  $(".row3").animate({opacity: "1.0"},5000);
+  $(".row4").animate({opacity: "1.0"},6000);
+  $(".Featured").animate({opacity: "1.0"}, 2000);
+  $(".Featured2").animate({opacity: "1.0"}, 2000);
+  $(".Featured3").animate({opacity: "1.0"}, 2000);
+  $(".Featured4").animate({opacity: "1.0"}, 2000);
+  $(".nano").nanoScroller();
+});
+
+function preload(arrayOfImages) {
+    $(arrayOfImages).each(function(){
+        $('<img/>')[0].src = this;
+    });
+}
+
+preload([
+    "Images/Logo3.png",
+    "Images/Enter.png",
+    "Images/Name And Occupation 2.png",
+	"Images/BackgroundPen2.png",
+	"Images/BackgroundPrintInk2.png",
+	"Images/BackgroundPixels2.png",
+	"Images/BackgroundOther.png",
+	"Images/TC20101-Thumbnail2.jpg",
+	"Images/TC20081-Thumbnail2.jpg",
+	"Images/TC20103-Thumbnail2.jpg",
+	"Images/TC20092-Thumbnail2.jpg",
+	"Images/PenAndInk.png",
+	"Images/Underline.png",
+	"Images/Untitled 2 Thumbnail2.jpg",
+	"Images/Untitled 4 Thumbnail2.jpg",
+	"Images/Beliefs Beyond Thumbnail2.jpg",
+	"Images/Persistence Thumbnail2.jpg",
+	"Images/Printmaking.png",
+	"Images/Bridges Thumbnail2.jpg",
+	"Images/Gems Thumbnail2.jpg",
+	"Images/Curiosity Thumbnail2.jpg",
+	"Images/Whirlwind Thumbnail2.jpg",
+	"Images/GraphicDesign.png",
+	"Images/ForJose-Thumbnail2.jpg",
+	"Images/Intertwined-Thumbnail2.jpg",
+	"Images/Seasonal-Thumbnail2.jpg",
+	"Images/TreasureWithin-Thumbnail2.jpg",
+	"Images/OtherMedia.png",
+	"Images/Facebook3.fw.png",
+	"Images/Behance3.fw.png",
+	"Images/Tumblr3.fw.png",
+	"Images/DeviantArt3.fw.png"
+]);
+</script>
+</body>
+</html>
